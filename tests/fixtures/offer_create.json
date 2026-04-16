@@ -1,0 +1,18 @@
+{
+  "Account": "rGWrZyQqhTp9Xu7G5Pkayo7bXjH4k4QYpf",
+  "Fee": "10",
+  "TakerGets": "100000000",
+  "TakerPays": {
+    "currency": "USD",
+    "issuer": "rU6K7V3Po4snVhBBaU29sesqs2qTQJWDw1",
+    "value": "50"
+  },
+  "TransactionType": "OfferCreate",
+  "hash": "E5F67890A1B2C3D4E5F67890A1B2C3D4E5F67890A1B2C3D4E5F67890A1B2C3D4",
+  "ledger_index": 95000070,
+  "meta": {
+    "TransactionResult": "tesSUCCESS"
+  },
+  "status": "success",
+  "validated": true
+}

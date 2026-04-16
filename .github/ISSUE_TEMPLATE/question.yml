@@ -1,0 +1,26 @@
+name: Question
+description: Ask a question about how to use the verifier.
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Do not paste production data
+
+        Please do not paste production XRPL transaction hashes that involve customer or counterparty information, customer wallet addresses, or any data covered by NDA or regulatory confidentiality. Use sanitized or public-test data when illustrating your question.
+
+        For security vulnerabilities, **do not open an issue.** See [SECURITY.md](../blob/main/SECURITY.md).
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: What you have already tried
+      description: Optional, but helps us answer faster.

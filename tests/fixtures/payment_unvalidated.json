@@ -1,0 +1,15 @@
+{
+  "Account": "rGWrZyQqhTp9Xu7G5Pkayo7bXjH4k4QYpf",
+  "Amount": "500000",
+  "Destination": "rU6K7V3Po4snVhBBaU29sesqs2qTQJWDw1",
+  "Fee": "12",
+  "TransactionType": "Payment",
+  "hash": "C3D4E5F67890A1B2C3D4E5F67890A1B2C3D4E5F67890A1B2C3D4E5F67890A1B2",
+  "ledger_index": 95000050,
+  "meta": {
+    "TransactionResult": "tesSUCCESS",
+    "delivered_amount": "500000"
+  },
+  "status": "success",
+  "validated": false
+}

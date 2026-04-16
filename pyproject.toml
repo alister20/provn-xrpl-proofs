@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "provn-xrpl-proofs"
+version = "0.1.0"
+description = "Read-only XRPL payment verifier for Provn claims. Anyone can independently verify an XRPL payment against expected values using only a public XRPL RPC endpoint."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Provn" }]
+keywords = ["xrpl", "ripple", "proof", "audit", "verifier"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "httpx>=0.25",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+provn-xrpl-verify = "provn_xrpl_proofs.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/provn/provn-xrpl-proofs"
+Issues = "https://github.com/provn/provn-xrpl-proofs/issues"
+
+[tool.setuptools.packages.find]
+include = ["provn_xrpl_proofs*"]
+exclude = ["tests*"]

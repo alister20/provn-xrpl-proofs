@@ -1,0 +1,25 @@
+{
+  "Account": "rGWrZyQqhTp9Xu7G5Pkayo7bXjH4k4QYpf",
+  "Amount": "12345678",
+  "Destination": "rU6K7V3Po4snVhBBaU29sesqs2qTQJWDw1",
+  "DestinationTag": 20250415,
+  "Fee": "12",
+  "Flags": 0,
+  "LastLedgerSequence": 95000010,
+  "Sequence": 12345,
+  "SigningPubKey": "03ABCDEF...",
+  "TransactionType": "Payment",
+  "TxnSignature": "304502...",
+  "date": 828000000,
+  "hash": "A1B2C3D4E5F67890A1B2C3D4E5F67890A1B2C3D4E5F67890A1B2C3D4E5F67890",
+  "inLedger": 95000000,
+  "ledger_index": 95000000,
+  "meta": {
+    "AffectedNodes": [],
+    "TransactionIndex": 0,
+    "TransactionResult": "tesSUCCESS",
+    "delivered_amount": "12345678"
+  },
+  "status": "success",
+  "validated": true
+}

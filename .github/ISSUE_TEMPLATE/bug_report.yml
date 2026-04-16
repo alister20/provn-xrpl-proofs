@@ -1,0 +1,81 @@
+name: Bug report
+description: Report incorrect behavior in the verifier library or CLI.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug report. Please read the notice below before submitting.
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Do not paste production data
+
+        **Do not paste:**
+        - Production XRPL transaction hashes that contain customer or counterparty information
+        - Customer wallet addresses
+        - Provn API keys, internal URLs, or configuration
+        - Any data covered by NDA or regulatory confidentiality
+
+        If you need to share a transaction to reproduce the bug, please either:
+        1. Use a public test transaction from XRPL mainnet that does not involve any of your customers, **or**
+        2. Sanitize the hash and addresses before pasting
+
+        For security vulnerabilities, **do not open an issue.** See [SECURITY.md](../blob/main/SECURITY.md).
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `pip show provn-xrpl-proofs` or the commit SHA you are running.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: "3.12.3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: A clear description of the actual behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: A clear description of the expected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Exact command or code snippet. Use a sanitized or public-test transaction hash.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: Actual output
+      description: Paste the JSON output or stack trace. Sanitize any sensitive values.
+      render: shell
+
+  - type: input
+    id: rpc
+    attributes:
+      label: XRPL RPC endpoint used
+      placeholder: "https://xrplcluster.com/"
